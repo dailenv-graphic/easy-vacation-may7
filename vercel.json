@@ -1,5 +1,25 @@
 {
+  "redirects": [
+    {
+      "source": "/emails/confirmation.html",
+      "destination": "/emails/confirmation",
+      "permanent": true
+    },
+    {
+      "source": "/emails/reminder.html",
+      "destination": "/emails/reminder",
+      "permanent": true
+    }
+  ],
   "rewrites": [
+    {
+      "source": "/emails/confirmation",
+      "destination": "/emails/confirmation/index.html"
+    },
+    {
+      "source": "/emails/reminder",
+      "destination": "/emails/reminder/index.html"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
