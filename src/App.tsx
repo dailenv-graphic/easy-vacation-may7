@@ -249,7 +249,7 @@ function App() {
             preload="auto"
             className="w-full h-full object-cover opacity-100"
           >
-            <source src="https://jonburtondesign.com/SecretShopper/media/HERO.mp4" type="video/mp4" />
+            <source src="/video-bg.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
@@ -475,10 +475,10 @@ function App() {
 
           <div className="max-w-6xl mx-auto mb-12 sm:mb-16">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-              <div className="group">
-                <div className="relative overflow-hidden bg-gradient-to-br from-teal-600 to-blue-600 p-5 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
+              <div>
+                <div className="relative overflow-hidden bg-gradient-to-br from-teal-600 to-blue-600 p-5 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-xl h-full flex flex-col">
                   <div className="relative z-10">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center mb-4 sm:mb-6">
                       <Users className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white" />
                     </div>
                     <h3 className="font-bold text-white text-lg sm:text-xl lg:text-2xl mb-2 sm:mb-3 drop-shadow-lg">Couples Requirement</h3>
@@ -488,14 +488,14 @@ function App() {
               </div>
 
               {eligibilityCards.map(({ icon: Icon, title, description }) => (
-                <div key={title} className="group">
-                  <div className="relative overflow-hidden bg-white p-5 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl border-2 border-gray-200 hover:border-teal-400 hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                <div key={title}>
+                  <div className="relative overflow-hidden bg-white p-5 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl border-2 border-gray-200 h-full flex flex-col">
                     <div className="relative z-20">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-teal-100 group-hover:bg-teal-200 rounded-xl flex items-center justify-center mb-4 sm:mb-6 transition-colors">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-teal-100 rounded-xl flex items-center justify-center mb-4 sm:mb-6">
                         <Icon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-teal-600" />
                       </div>
-                      <h3 className="font-bold text-gray-900 text-lg sm:text-xl lg:text-2xl mb-2 sm:mb-3 transition-colors">{title}</h3>
-                      <p className="text-gray-600 leading-relaxed transition-colors text-sm sm:text-base">{description}</p>
+                      <h3 className="font-bold text-gray-900 text-lg sm:text-xl lg:text-2xl mb-2 sm:mb-3">{title}</h3>
+                      <p className="text-gray-600 leading-relaxed text-sm sm:text-base">{description}</p>
                     </div>
                   </div>
                 </div>
@@ -509,8 +509,8 @@ function App() {
       <section className="py-12 md:py-16 lg:py-20 relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://jonburtondesign.com/SecretShopper/images/images/Sandles.png"
-            alt="Sandals Resort Background"
+            src="/images/reviews-bg.jpg"
+            alt=""
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-teal-900/60"></div>
@@ -528,7 +528,7 @@ function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto mb-8 md:mb-12">
             {testimonials.map((testimonial, idx) => (
-              <div key={idx} className="bg-white/10 backdrop-blur-md p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 sm:hover:scale-105">
+              <div key={idx} className="bg-white/10 backdrop-blur-md p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-2xl border border-white/20">
                 <div className="flex items-center gap-1 mb-3 sm:mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 sm:w-6 sm:h-6 fill-oange-700 text-oange-700" />
@@ -608,7 +608,7 @@ function App() {
             preload="auto"
             className="w-full h-full object-cover opacity-100"
           >
-            <source src="https://jonburtondesign.com/SecretShopper/media/FinalCTA.mp4" type="video/mp4" />
+            <source src="/spot-beach.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
