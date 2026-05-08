@@ -1,0 +1,9 @@
+# Dependencies
+node_modules/
+
+# Production build (run `npm run build` to regenerate)
+dist/
+
+# Local / OS noise
+.DS_Store
+*.local
